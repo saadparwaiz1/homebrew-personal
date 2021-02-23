@@ -61,6 +61,12 @@ class LuaLanguageServer < Formula
   end
 
   test do
-    system "echo", "0"
+    (testpath/"test.lua").write('print("test")')
+    on_macos do
+      system "#{opt_prefix}/macOS/lua-language-server", (testpath/"test.lua")
+    end
+    on_linux do
+      system "#{opt_prefix}/Linux/lua-language-server", (testpath/"test.lua")
+    end
   end
 end
