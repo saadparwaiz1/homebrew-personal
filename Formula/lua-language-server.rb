@@ -9,9 +9,9 @@ class LuaLanguageServer < Formula
   head "https://github.com/sumneko/lua-language-server.git"
 
   bottle do
-    root_url "https://github.com/saadparwaiz1/homebrew-personal/releases/download/lua-language-server-1.16.0"
-    sha256 cellar: :any,                 catalina:     "94b05688569d19dc8c18c4768b16e4b0d794d068e9af1ba5de640db89106f8a7"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "a780ad6c2d2992feef954b7bed9a80599b40ebf3cf8be57a6b612f927258df89"
+    root_url "https://github.com/saadparwaiz1/homebrew-personal/releases/download/lua-language-server-1.16.0_1"
+    sha256 cellar: :any,                 catalina:     "1fb093a70045b3300802fd211cd604b51c15939752b9ac66c3f33dcb3455881e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "4723605da8afde29364ec081970b6215197bbd7db255967540fbb4d0155ad15d"
   end
 
   depends_on "ninja" => :build
