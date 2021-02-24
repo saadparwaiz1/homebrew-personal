@@ -28,6 +28,6 @@ class Zinit < Formula
   end
 
   test do
-    system "echo", "0"
+    system "zsh", "-c", "source #{opt_prefix}/zinit.zsh"
   end
 end
