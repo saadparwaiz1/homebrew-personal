@@ -5,8 +5,8 @@ class LuaLanguageServer < Formula
     tag:      "1.16.0",
     revision: "ebbf09bb27bf54168701f92af51ca774205b77d0"
   license "MIT"
-  head "https://github.com/sumneko/lua-language-server.git"
   revision 1
+  head "https://github.com/sumneko/lua-language-server.git"
 
   bottle do
     root_url "https://github.com/saadparwaiz1/homebrew-personal/releases/download/lua-language-server-1.16.0"
