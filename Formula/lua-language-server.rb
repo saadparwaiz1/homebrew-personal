@@ -6,6 +6,7 @@ class LuaLanguageServer < Formula
     revision: "ebbf09bb27bf54168701f92af51ca774205b77d0"
   license "MIT"
   head "https://github.com/sumneko/lua-language-server.git"
+  revision 1
 
   bottle do
     root_url "https://github.com/saadparwaiz1/homebrew-personal/releases/download/lua-language-server-1.16.0"
@@ -46,14 +47,14 @@ class LuaLanguageServer < Formula
     on_macos do
       IO.write "lua-langserver", <<~EOS
         #!/bin/sh
-        #{opt_prefix}/macOS/lua-language-server -E #{opt_prefix}/main.lua
+        #{opt_prefix}/macOS/lua-language-server #{opt_prefix}/main.lua --logpath=#{var}/log/lua-language-server --metapath=#{opt_prefix}/meta
       EOS
     end
 
     on_linux do
       IO.write "lua-langserver", <<~EOS
         #!/bin/sh
-        #{opt_prefix}/Linux/lua-language-server -E #{opt_prefix}/main.lua
+        #{opt_prefix}/Linux/lua-language-server #{opt_prefix}/main.lua
       EOS
     end
 
