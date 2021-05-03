@@ -18,11 +18,11 @@ class LuaLanguageServer < Formula
   def install
     cd "#{buildpath}/3rd/luamake" do
       on_macos do
-        system "ninja", "-f", "ninja/macos.ninja"
+        system "ninja", "-f", "compile/ninja/macos.ninja"
       end
 
       on_linux do
-        system "ninja", "-f", "ninja/linux.ninja"
+        system "ninja", "-f", "compile/ninja/linux.ninja"
       end
     end
 
