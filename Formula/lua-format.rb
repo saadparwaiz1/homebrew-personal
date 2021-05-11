@@ -12,6 +12,7 @@ class LuaFormat < Formula
   def install
     system "cmake", "."
     system "make"
+    ENV.deparallelize
     system "make", "install"
   end
 
