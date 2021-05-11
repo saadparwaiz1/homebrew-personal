@@ -16,6 +16,6 @@ class LuaFormat < Formula
   end
 
   test do
-    system "lua-format -h"
+    system "lua-format", "-h"
   end
 end
