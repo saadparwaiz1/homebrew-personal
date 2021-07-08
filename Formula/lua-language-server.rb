@@ -2,8 +2,8 @@ class LuaLanguageServer < Formula
   desc "Language Server For Lua"
   homepage "https://github.com/sumneko/lua-language-server"
   url "https://github.com/sumneko/lua-language-server.git",
-    tag:      "2.0.4",
-    revision: "84cc3ccc4ef1408299801a3fd24f9fd482f061e0"
+    tag:      "2.2.0",
+    revision: "a02199fa6845a330a3d6fd3a324c168befeede33"
   license "MIT"
   head "https://github.com/sumneko/lua-language-server.git"
 
